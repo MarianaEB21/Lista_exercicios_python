@@ -23,7 +23,7 @@ while (plano < 1 or plano > 4):
 
     try:
         plano = int(input("Digite o número correspondente ao seu plano: "))
-    except:
+    except ValueError:
         print('!!! Digite um valor numérico !!!')
     else:
         if plano == 1:
@@ -48,7 +48,7 @@ error_faturamento = True
 while error_faturamento:
     try:
         faturamento_anual = float(input("Qual seu faturamento anual? "))
-    except:
+    except ValueError:
         print("O faturamento precisa ser numérico! Digite novamente.")
         error_faturamento = True
     else:
