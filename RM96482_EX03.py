@@ -11,14 +11,14 @@ media_par = 0
 
 print("VOCÊ ESTÁ DIGITANDO AS NOTAS DOS ALUNOS ÍMPARES\n")
 for aluno_impar in range (1,qtde_alunos,2):
-    nota = float(input(f"Por favor, insira a nota do aluno de número {aluno_impar}: "))
+    nota = float(input(f"POR FAVOR, INSIRA A NOTA DO ALUNO {aluno_impar}: "))
     chamada_impar.append(nota)
 media_impar = (sum(chamada_impar)/len(chamada_impar))
 print("\n")
 
 print("VOCÊ ESTÁ DIGITANDO AS NOTAS DOS ALUNOS PARES\n")
 for aluno_par in range (2,qtde_alunos,2):
-    nota = float(input(f"Por favor, insira a nota do aluno de número {aluno_par}: "))
+    nota = float(input(f"POR FAVOR, INSIRA A NOTA DO ALUNO {aluno_par}: "))
     chamada_par.append(nota)
 media_par = (sum(chamada_par)/len(chamada_par))
 
